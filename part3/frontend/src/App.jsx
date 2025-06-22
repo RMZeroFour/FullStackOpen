@@ -56,7 +56,7 @@ function PersonForm({ persons, setPersons, setNotification, setError }) {
                 Persons
                     .updateExisting({ ...existingPerson, number: number })
                     .then(changedPerson => {
-                        setPersons(persons.map(person => person.name == newName ? changedPerson : person));
+                        setPersons(persons.map(person => person.name === newName ? changedPerson : person));
                     })
                     .then(() => showNotification(`Updated ${newName}`))
                     .catch(error => {
@@ -68,7 +68,8 @@ function PersonForm({ persons, setPersons, setNotification, setError }) {
             Persons
                 .addNew({ name: newName, number: number })
                 .then(newPerson => setPersons(persons.concat(newPerson)))
-                .then(() => showNotification(`Added ${newName}`));
+                .then(() => showNotification(`Added ${newName}`))
+                .catch(error => showError(error.response.data.error));
         }
         setNewName('');
         setNumber('');
