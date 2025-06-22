@@ -25,11 +25,11 @@ const personSchema = new mongoose.Schema({
 });
 
 personSchema.set('toJSON', {
-  transform: (document, returnedObject) => {
-    returnedObject.id = returnedObject._id.toString();
-    delete returnedObject._id;
-    delete returnedObject.__v;
-  }
+    transform: (document, returnedObject) => {
+        returnedObject.id = returnedObject._id.toString();
+        delete returnedObject._id;
+        delete returnedObject.__v;
+    }
 });
 
 const Person = mongoose.model('Person', personSchema);

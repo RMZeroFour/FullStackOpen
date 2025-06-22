@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const password = encodeURIComponent(process.argv[2]);
 const mongodbURI = `mongodb+srv://rmzerofour:${password}@cluster0.zbu2u2w.mongodb.net/phonebook?retryWrites=true&w=majority&appName=Cluster0`;
