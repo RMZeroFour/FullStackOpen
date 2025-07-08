@@ -23,7 +23,11 @@ loginRouter.post('/', async (request, response) => {
         username: user.username
     }, TOKEN_SECRET);
 
-    response.status(200).json({ token });
+    response.status(200).json({
+        token,
+        username: user.username,
+        name: user.name
+    });
 });
 
 export default loginRouter;
