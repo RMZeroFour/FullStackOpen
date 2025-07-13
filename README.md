@@ -10,6 +10,7 @@ Contains exercises from the following:
 - [x] Part 4: Testing Express servers, user administration [23/23]
 - [x] Part 5: Testing React apps [23/23]
 - [x] Part 6: Advanced state management [24/24]
+- [x] Part 7: React router, custom hooks, styling app with CSS and webpack [21/21]
 
 Links to deployed projects:
 - [Phonebook](https://fullstackopen-phonebook-3wu0.onrender.com)
