@@ -1,6 +1,6 @@
 # FullStackOpen Exercises
 
-![Certificate for parts 0-4](Certificate0-4.png)
+![Certificate for parts 0-4](Certificate.png)
 
 Contains exercises from the following:
 - [x] Part 0: Fundamentals of Web Apps [6/6]
